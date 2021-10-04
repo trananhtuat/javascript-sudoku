@@ -301,7 +301,6 @@ const startGame = () => {
 
     game_level.innerHTML = CONSTANT.LEVEL_NAME[level_index];
 
-    seconds = 0;
     showTime(seconds);
 
     timer = setInterval(() => {
