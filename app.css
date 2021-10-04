@@ -41,7 +41,7 @@
 
 body {
     font-family: "Potta One", cursive;
-    height: 100vh;
+    /* height: 100vh; */
     background-color: var(--bg-body);
     overflow-x: hidden;
     user-select: none;
@@ -115,7 +115,7 @@ nav {
 }
 
 .main {
-    height: 100vh;
+    /* height: 100vh; */
     padding-top: var(--nav-size);
     display: grid;
     place-items: center;
@@ -436,5 +436,9 @@ nav {
 
     .screen {
         min-width: unset;
+    }
+
+    .main {
+        height: 100vh;
     }
 }
