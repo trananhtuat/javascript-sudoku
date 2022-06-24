@@ -40,7 +40,7 @@ const isBoxSafe = (grid, box_row, box_col, value) => {
 
 // check in row, col and 3x3 box
 const isSafe = (grid, row, col, value) => {
-    return isColSafe(grid, col, value) && isRowSafe(grid, row, value) && isBoxSafe(grid, row - row%3, col - col%3, value) && value !== CONSTANT.UNASSIGNED;
+    return isColSafe(grid, col, value) && isRowSafe(grid, row, value) && isBoxSafe(grid, row - row%CONSTANT.BOX_SIZE, col - col%CONSTANT.BOX_SIZE, value) && value !== CONSTANT.UNASSIGNED;
 }
 
 // find unassigned cell
